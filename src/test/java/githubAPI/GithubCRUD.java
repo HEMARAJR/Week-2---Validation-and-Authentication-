@@ -18,7 +18,7 @@ public class GithubCRUD {
     				.contentType("application/json")
     				.body("""
 	    			{
-	    			"name" : "repoREST",
+	    			"name" : "repoRESTGithub",
 	    			"description" : "des"
 	    			}
 	    			""")
@@ -58,7 +58,7 @@ public class GithubCRUD {
 		.contentType("application/json").header("Authorization" , "")
 		.body("""
     			{
-    			"name" : "repoREST",
+    			"name" : "repoRESTGithub",
     			"description" : "des1"
     			}
     			""")    
