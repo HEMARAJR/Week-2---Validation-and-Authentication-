@@ -13,7 +13,7 @@ public class GetProject {
 	public void getSingleProject() {
 		
 		given()
-//		.pathParam("projectId","NH_PROJ_319")	qaw!~#
+//		.pathParam("projectId","NH_PROJ_319")	
 		
 		.when()
 		.get("http://49.249.28.218:8091/projects")
