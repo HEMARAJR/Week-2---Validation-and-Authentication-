@@ -9,14 +9,14 @@ public class DataProviderClass {
 
         Object[][] objArr = new Object[3][2];
 
-        objArr[0][0] = "India";
-        objArr[0][1] = "Paris";
+        objArr[0][0] = "TamilNadu";
+        objArr[0][1] = "Cuddalore";
 
         objArr[1][0] = "TamilNadu";
-        objArr[1][1] = "Kerala";
+        objArr[1][1] = "Erode";
 
         objArr[2][0] = "TamilNadu";
-        objArr[2][1] = "Goa";
+        objArr[2][1] = "Chennai";
 
         return objArr;
     }
