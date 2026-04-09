@@ -16,7 +16,7 @@ public class LotOfFun {
 //	@Test
 	void postPet(){
 		RestAssured.given()
-			.formParam("name","kamal")
+			.formParam("name","Scooby")
 			.pathParam("petID", ID)
 			
 			.when()
@@ -32,16 +32,16 @@ public class LotOfFun {
 					+ "  \"id\": 0,\r\n"
 					+ "  \"category\": {\r\n"
 					+ "    \"id\": 0,\r\n"
-					+ "    \"name\": \"string\"\r\n"
+					+ "    \"name\": \"Scooby Do\"\r\n"
 					+ "  },\r\n"
-					+ "  \"name\": \"kamala\",\r\n"
+					+ "  \"name\": \"Mr Tester\",\r\n"
 					+ "  \"photoUrls\": [\r\n"
 					+ "    \"string\"\r\n"
 					+ "  ],\r\n"
 					+ "  \"tags\": [\r\n"
 					+ "    {\r\n"
 					+ "      \"id\": 0,\r\n"
-					+ "      \"name\": \"string\"\r\n"
+					+ "      \"name\": \"Puppy\"\r\n"
 					+ "    }\r\n"
 					+ "  ],\r\n"
 					+ "  \"status\": \"available\"\r\n"
@@ -54,7 +54,7 @@ public class LotOfFun {
 	@Test
 	void uploadImage() {
 		
-		File image = new File("C:\\Users\\HARWIN S\\OneDrive\\Pictures\\blackHole.jpeg");
+		File image = new File("/Users/hemarajr/Desktop/dog.jpeg");
 		
 		RestAssured.given()
 		.pathParam("petID", ID)
