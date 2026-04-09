@@ -13,7 +13,7 @@ public class GetProjectByID {
         
 		// HTTP METHOD
 		.when()
-			.get("http://49.249.28.218:8091/project/NH_PROJ_039")
+			.get("http://49.249.28.218:8091/project/NH_PROJ_010")
 		
 	// RESPONSE
 		.then()
