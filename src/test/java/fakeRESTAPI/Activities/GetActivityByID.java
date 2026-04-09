@@ -11,7 +11,7 @@ public class GetActivityByID {
 		
 			// PRE CONDITION
 			given()
-				.pathParam("id", 9)
+				.pathParam("id", 2)
 	        
 			// HTTP METHOD
 			.when()
