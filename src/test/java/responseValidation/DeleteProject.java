@@ -13,7 +13,7 @@ public class DeleteProject {
 	public void getSingleProject() {
 		
 		given()
-		.pathParam("projectId","NH_PROJ_312")
+		.pathParam("projectId","NH_PROJ_001")
 		
 		.when()
 		.delete("http://49.249.28.218:8091/project/{projectId}")
