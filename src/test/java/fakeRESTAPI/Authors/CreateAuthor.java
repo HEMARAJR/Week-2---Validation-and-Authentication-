@@ -16,8 +16,8 @@ public class CreateAuthor {
         {
             "id": 20,
             "idBook": 10,
-            "firstName": "sabari",
-            "lastName": "nathan"
+            "firstName": "MR",
+            "lastName": "TESTER"
         }
         """;
 
