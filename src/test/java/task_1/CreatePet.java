@@ -6,7 +6,7 @@ import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
-public class Fun {
+public class CreatePet {
 
     static String ID;
 
@@ -21,7 +21,7 @@ public class Fun {
 
         Response response = RestAssured.given()
                 .contentType(ContentType.JSON)
-                .body("{ \"createdBy\": \"haarwin\", \"projectName\": \"API_Automation_Project002\", \"status\": \"Ongoing\", \"teamSize\": 0 }")
+                .body("{ \"createdBy\": \"Tester\", \"projectName\": \"API endpoint Project\", \"status\": \"Ongoing\", \"teamSize\": 0 }")
 
         .when()
                 .post("/addProject")
@@ -56,7 +56,7 @@ public class Fun {
 
         RestAssured.given()
                 .contentType(ContentType.JSON)
-                .body("{ \"createdBy\": \"haarwin\", \"projectName\": \"API_Automation_Project002\", \"status\": \"Completed\", \"teamSize\": 6 }")
+                .body("{ \"createdBy\": \"Tester 1\", \"projectName\": \"API Automation Project Update\", \"status\": \"Completed\", \"teamSize\": 0 }")
                 .pathParam("PROJECT_ID", ID)
 
         .when()
