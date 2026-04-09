@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
 
-public class botter {
+public class CreateOrder {
 	@Test
 	
 	public static void lol(){
