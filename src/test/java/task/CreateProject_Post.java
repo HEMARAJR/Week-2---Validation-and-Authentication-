@@ -13,7 +13,7 @@ public class CreateProject_Post {
 
         given()
         .contentType(ContentType.JSON)
-            .body("{ \"createdBy\": \"Sabari\", \"projectName\": \"API_Project_02\", \"status\": \"Created\", \"teamSize\": 0}")
+            .body("{ \"createdBy\": \"Tester\", \"projectName\": \"API endpoint Testing\", \"status\": \"Ongoing\", \"teamSize\": 0}")
 
         .when()
             .post("http://49.249.28.218:8091/addProject")
