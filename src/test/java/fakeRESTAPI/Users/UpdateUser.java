@@ -11,8 +11,8 @@ public class UpdateUser {
 	public void updateUser() {
 		String str = """
 	            {
-	                "userName": "sabari1",
-	                "password": "sabari@2004"
+	                "userName": "tester 1",
+	                "password": "tester@001"
 	             }
 	                    """;
 		RestAssured.given()
