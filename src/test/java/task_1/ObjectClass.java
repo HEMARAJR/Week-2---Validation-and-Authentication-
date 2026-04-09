@@ -1,6 +1,6 @@
 package task_1;
 
-public class object {
+public class ObjectClass {
 	private int id;
 	private int petId;
 	private String status;
