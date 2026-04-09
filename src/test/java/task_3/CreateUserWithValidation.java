@@ -12,10 +12,10 @@ public class CreateUserWithValidation {
         RestAssured.baseURI = "http://49.249.28.218:8091";
 
         String body = "{\n" +
-                "  \"createdBy\": \"Sabarinathan\",\n" +
-                "  \"projectName\": \"ValidateProject\",\n" +
+                "  \"createdBy\": \"tester 1\",\n" +
+                "  \"projectName\": \"Validating Project\",\n" +
                 "  \"status\": \"Created\",\n" +
-                "  \"teamSize\": 6\n" +
+                "  \"teamSize\": 0\n" +
                 "}";
 
         RestAssured
@@ -27,7 +27,7 @@ public class CreateUserWithValidation {
                 .then()
                 .statusCode(201)
                 .assertThat()
-                .body("createdBy", org.hamcrest.Matchers.equalTo("Sabarinathan"))
+                .body("createdBy", org.hamcrest.Matchers.equalTo("tester 1"))
                 .log().all();
     }
 }
