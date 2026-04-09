@@ -4,7 +4,7 @@ import static org.hamcrest.Matchers.*;
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.*;
 
-public class Today {
+public class GetProjectByName {
 	@Test
 	public void getProjectTest() {
 		
