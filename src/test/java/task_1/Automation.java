@@ -4,24 +4,24 @@ import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
 
-public class AUTOMATION {
+public class Automation {
 	final String BASE_URL = "https://automationexercise.com/api";
-	String update = "{ \"email\": \"john.doe@example.com\", \"birth_date\": \"30\", \"birth_month\": \"11\", \"birth_year\": \"2004\", \"zipcode\": \"600099\" }";
+	String update = "{ \"email\": \"tester01@example.com\", \"birth_date\": \"14\", \"birth_month\": \"08\", \"birth_year\": \"2004\", \"zipcode\": \"608002\" }";
 	
 	@Test
 	void createUserAccount() {
 		
 		RestAssured.given()
         .contentType("application/x-www-form-urlencoded")
-        .formParam("name", "hartin Doe")
-        .formParam("email", "hartin.doe@example.com")
-        .formParam("password", "SecurePass123")
+        .formParam("name", "Tester 1")
+        .formParam("email", "tester01@example.com")
+        .formParam("password", "SecurePassTest123")
         .formParam("title", "Mr")
-        .formParam("birth_date", "15")
-        .formParam("birth_month", "June")
-        .formParam("birth_year", "1998")
-        .formParam("firstname", "John")
-        .formParam("lastname", "Doe")
+        .formParam("birth_date", "14")
+        .formParam("birth_month", "August")
+        .formParam("birth_year", "1972")
+        .formParam("firstname", "Mr")
+        .formParam("lastname", "Tester")
         .formParam("company", "Tech Solutions Pvt Ltd")
         .formParam("address1", "123 Anna Nagar Street")
         .formParam("address2", "Near Metro Station")
@@ -41,7 +41,7 @@ public class AUTOMATION {
 	@Test
 	void getUserByID() {
 		RestAssured.given()
-		.formParam("email", "hartin.doe@example.com")
+		.formParam("email", "tester01@example.com")
 			.when()
 				.get(BASE_URL + "/getUserDetailByEmail")
 			.then().log().all();
@@ -50,8 +50,8 @@ public class AUTOMATION {
 	@Test
 	void deleteUser() {
 		RestAssured.given()
-			.formParam("email", "hartin.doe@example.com")
-			.formParam("password", "SecurePass123")
+			.formParam("email", "tester01@example.com")
+			.formParam("password", "SecurePassTest123")
 			
 			.when()
 				.delete(BASE_URL + "/deleteAccount")
@@ -61,11 +61,11 @@ public class AUTOMATION {
 	@Test
 	void updateAccount() {
 		RestAssured.given()
-			.formParam("email", "hartin.doe@example.com")
-			.formParam("password", "SecurePass123")
+			.formParam("email", "tester01@example.com")
+			.formParam("password", "SecurePassTest123")
 			.formParam("birth_date", "30")
-	        .formParam("birth_month", "11")
-	        .formParam("birth_year", "2004")
+	        .formParam("birth_month", "10")
+	        .formParam("birth_year", "2000")
 	        .formParam("zipcode", "600099")
 			
 			.when()
