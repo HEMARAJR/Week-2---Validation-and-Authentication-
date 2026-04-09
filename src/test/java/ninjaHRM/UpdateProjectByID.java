@@ -2,7 +2,7 @@ package ninjaHRM;
 
 import io.restassured.RestAssured;
 
-public class UpdateeProjectByID {
+public class UpdateProjectByID {
 	public static void main(String[] args) {
 		
 		// PRE CONDITION
