@@ -14,10 +14,10 @@ public class CreateUserUsingMap {
         RestAssured.baseURI = "http://49.249.28.218:8091";
 
         HashMap<String, Object> map = new HashMap<>();
-        map.put("createdBy", "Sabarinathan");
-        map.put("projectName", "MapProject");
-        map.put("status", "Created");
-        map.put("teamSize", 3);
+        map.put("createdBy", "Tester 1");
+        map.put("projectName", "HashMap Testing");
+        map.put("status", "Ongoing");
+        map.put("teamSize", 0);
 
         RestAssured
                 .given()
