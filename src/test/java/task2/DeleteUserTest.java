@@ -12,7 +12,7 @@ public class DeleteUserTest {
 
         RestAssured
                 .given()
-                .delete("/projects/TY_PROJ_001")
+                .delete("/projects/NH_PROJ_001")
                 .then()
                 .statusCode(204)
                 .log().all();
