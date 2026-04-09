@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 
-public class LotOfFun {
+public class AddProject {
 	
 	final String BASE_URL = "https://petstore.swagger.io/v2";
 	final String ID = 9223372036854775807l + "";
