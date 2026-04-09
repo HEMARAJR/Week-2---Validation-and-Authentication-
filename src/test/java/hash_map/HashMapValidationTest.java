@@ -15,10 +15,10 @@ public class HashMapValidationTest {
         RestAssured.baseURI = "http://49.249.28.218:8091";
 
         HashMap<String, Object> map = new HashMap<>();
-        map.put("createdBy", "Sabarinathan");
+        map.put("createdBy", "Tester 1");
         map.put("projectName", "ValidationProject");
-        map.put("status", "Created");
-        map.put("teamSize", 5);
+        map.put("status", "Completed");
+        map.put("teamSize", 0);
 
         RestAssured
                 .given()
