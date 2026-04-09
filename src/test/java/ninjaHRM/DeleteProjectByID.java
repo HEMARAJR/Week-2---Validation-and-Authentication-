@@ -11,7 +11,7 @@ public class DeleteProjectByID {
         
 		// HTTP METHOD
 			.when()
-				.delete("http://49.249.28.218:8091/project/NH_PROJ_2936")
+				.delete("http://49.249.28.218:8091/project/NH_PROJ_2938")
 			
 		// RESPONSE
 			.then()
