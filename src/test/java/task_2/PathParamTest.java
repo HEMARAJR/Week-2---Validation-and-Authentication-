@@ -13,7 +13,7 @@ public class PathParamTest {
 
         RestAssured
                 .given()
-                .pathParam("projectId", "TY_PROJ_001")
+                .pathParam("projectId", "NH_PROJ_001")
                 .when()
                 .get("/projects/{projectId}")
                 .then()
