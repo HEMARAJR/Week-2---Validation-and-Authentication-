@@ -9,14 +9,14 @@ public class SignUp {
 		RestAssured.given()
 		.contentType("application/json")
         .body("{\r\n"
-        		+ "  \"address\": \"test\",\r\n"
-        		+ "  \"contact\": \"92855285537\",\r\n"
-        		+ "  \"email\": \"note@gmail.com\",\r\n"
+        		+ "  \"address\": \"Tester 1\",\r\n"
+        		+ "  \"contact\": \"9876543210\",\r\n"
+        		+ "  \"email\": \"test@gmail.com\",\r\n"
         		+ "  \"gender\": \"male\",\r\n"
-        		+ "  \"name\": \"note\",\r\n"
-        		+ "  \"password\": \"note\",\r\n"
-        		+ "  \"role\": \"CEO\",\r\n"
-        		+ "  \"username\": \"note\"\r\n"
+        		+ "  \"name\": \"Tester\",\r\n"
+        		+ "  \"password\": \"tester@001\",\r\n"
+        		+ "  \"role\": \"Test Engineer\",\r\n"
+        		+ "  \"username\": \"Tester\"\r\n"
         		+ "}")
         
 		// HTTP METHOD
