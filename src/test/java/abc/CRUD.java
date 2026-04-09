@@ -22,8 +22,8 @@ public class CRUD {
 		Response response = RestAssured.given()
 				.contentType("application/json")
 				.body("{\n" +
-                      "  \"createdBy\": \"sabari\",\n" +
-                      "  \"projectName\": \"sabari_Project11\",\n" +
+                      "  \"createdBy\": \"Tester 1\",\n" +
+                      "  \"projectName\": \"Testing - 1\",\n" +
                       "  \"status\": \"Created\",\n" +
 	                  "  \"teamSize\": 0\n" +
 	                  "}")
@@ -56,8 +56,8 @@ public class CRUD {
 	            .contentType("application/json")
 	            .pathParam("projectId", ProjectId)
 	            .body("{\n" +
-	                  "  \"createdBy\": \"sabari\",\n" +
-	                  "  \"projectName\": \"sabari_Project_Updated\",\n" +
+	                  "  \"createdBy\": \"Tester 2\",\n" +
+	                  "  \"projectName\": \"Testing - 1 Updated\",\n" +
 	                  "  \"status\": \"Ongoing\"\n" +
 	                  "}")
 	            .when()
