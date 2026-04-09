@@ -12,11 +12,11 @@ public class UpdateProject {
 public void updateProject() {
 
 given()
-.pathParam("projectId", "NH_PROJ_377")
+.pathParam("projectId", "NH_PROJ_360")
 .contentType(ContentType.JSON)
 .body("{\n" +
-"  \"createdBy\": \"Kamala\",\n" +
-"  \"projectName\": \"Kannan\",\n" +
+"  \"createdBy\": \"Tester 1\",\n" +
+"  \"projectName\": \"API endpoint Testing\",\n" +
 "  \"status\": \"Ongoing\",\n" +
 "  \"teamSize\": 0\n" +
 "}")
