@@ -8,7 +8,7 @@ public class BearerTokenTest {
     @Test
     public void bearerTokenTest() {
 
-        String token = "your_token_here";
+        String token = "token";
 
         RestAssured
                 .given()
