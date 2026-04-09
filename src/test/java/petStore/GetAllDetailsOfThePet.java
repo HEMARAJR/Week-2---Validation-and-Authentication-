@@ -11,7 +11,7 @@ public class GetAllDetailsOfThePet {
 		
 		// HTTP METHOD
 		.when()
-			.get("https://petstore.swagger.io/v2/pet/1")
+			.get("https://petstore.swagger.io/v2/pet")
 		
 		// RESPONSE
 			.then()
