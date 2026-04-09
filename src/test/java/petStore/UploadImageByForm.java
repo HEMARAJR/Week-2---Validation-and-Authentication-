@@ -8,7 +8,7 @@ public class UploadImageByForm {
 	@Test
 	public void uploadImageTest() {
 		
-		File picture = new File("C:/Users/Manish/Pictures/Wallpapers/Mountain_light.png");
+		File picture = new File("/Users/hemarajr/Desktop/dog.jpeg");
 		// PRE CONDITION
 		RestAssured.given()
 			.pathParam("petId", 576960)
