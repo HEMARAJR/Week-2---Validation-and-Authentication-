@@ -11,8 +11,8 @@ public class CreateUser {
 		String str = """
             {
                 "id": 0,
-                "userName": "sabari",
-                "password": "sabari@2004"
+                "userName": "Tester-1",
+                "password": "tester@2004"
              }
                     """;
 		RestAssured.given()
