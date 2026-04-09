@@ -11,8 +11,8 @@ public class UpdateUserTest {
         RestAssured.baseURI = "http://49.249.28.218:8091";
 
         String body = "{\n" +
-                "  \"createdBy\": \"Sabarinathan\",\n" +
-                "  \"projectName\": \"UpdatedProject\",\n" +
+                "  \"createdBy\": \"Tester 1\",\n" +
+                "  \"projectName\": \"Update\",\n" +
                 "  \"status\": \"Ongoing\",\n" +
                 "  \"teamSize\": 0\n" +
                 "}";
@@ -21,7 +21,7 @@ public class UpdateUserTest {
                 .given()
                 .header("Content-Type", "application/json")
                 .body(body)
-                .put("/projects/TY_PROJ_001")
+                .put("/projects/NH_PROJ_001")
                 .then()
                 .statusCode(200)
                 .log().all();
