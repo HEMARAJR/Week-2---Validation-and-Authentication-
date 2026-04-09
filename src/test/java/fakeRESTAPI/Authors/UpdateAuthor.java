@@ -10,8 +10,8 @@ public class UpdateAuthor {
 		String body = """
 				{
 					"id": 204,
-				    "firstName": "sabari",
-				    "lastName": "nathan"
+				    "firstName": "Tester",
+				    "lastName": "001"
 				}
 				""";
 		RestAssured.given()
