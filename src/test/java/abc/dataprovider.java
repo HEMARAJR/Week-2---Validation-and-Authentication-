@@ -1,22 +1,22 @@
-package abc;
+package sample;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class dataprovider {
+public class DataproviderDriver {
 	@DataProvider
 	public Object[][] dataProvider_BookingTicket() {
 
 	    Object[][] objArr = new Object[3][2];
 
-	    objArr[0][0] = "India";
-	    objArr[0][1] = "Paris";
+	    objArr[0][0] = "TamilNadu";
+	    objArr[0][1] = "Chennai";
 
 	    objArr[1][0] = "TamilNadu";
-	    objArr[1][1] = "Kerala";
+	    objArr[1][1] = "Cuddalore";
 
 	    objArr[2][0] = "TamilNadu";
-	    objArr[2][1] = "Goa";
+	    objArr[2][1] = "Erode";
 
 	    return objArr;
 	}
