@@ -10,7 +10,7 @@ public class DeletePetById {
 		
 		// HTTP METHOD
 			.when()
-				.delete("https://petstore.swagger.io/v2/pet/9223372036854775807")
+				.delete("https://petstore.swagger.io/v2/pet/9223372036854775806")
 			
 		// RESPONSE
 			.then()
